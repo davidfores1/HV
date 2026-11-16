@@ -71,6 +71,25 @@
     clear: both;
     display: table;
   }
+  @page {
+    size: A4;
+    margin: 1.4cm 1.5cm;
+  }
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+      max-width: none;
+    }
+    h2, .clearfix, .cargo {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    ul, p, table, tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
 </style>
 </head>
 <body>
@@ -92,7 +111,7 @@
 </p>
 
 <h2>COMPETENCIAS TÉCNICAS</h2>
-<tr>
+<table>
   <tr><th></th><th>Tecnologías / Prácticas</th></tr>
   <tr><td><strong>Backend</strong></td><td> Java, Spring Boot, PHP, Laravel</td></tr>
   <tr><td><strong>Frontend</strong></td><td> Angular, Ionic, JavaScript, HTML5, CSS3, Bootstrap</td></tr>
@@ -169,7 +188,11 @@
 </ul>
 
 <h2>EDUCACIÓN</h2>
+<p><strong>Ingeniería de Software — Actualmente estudiando</strong><br>Corporación Universitaria Iberoamericana (IBERO)</p>
+
 <p><strong>Tecnólogo</strong><br>Análisis y Desarrollo de Sistemas de Información (ADSI) – SENA – 2016 – 2018</p>
+
+<p><strong>Certificación</strong><br>Remote Work Professional Certification (RWPC)</p>
 
 <p><strong>Cursos Udemy</strong></p>
 <ul>
